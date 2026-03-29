@@ -1,13 +1,17 @@
-import React, { useState } from "react";
-import LoginScreen from "../components/LoginScreen";
-import SplashScreen from "../components/SplashScreen";
+import { Redirect, useRootNavigationState } from "expo-router";
 
-export default function App() {
-  const [loading, setLoading] = useState(true);
+export default function RootIndex() {
+  const isLoggedIn = false;
 
-  if (loading) {
-    return <SplashScreen onFinish={() => setLoading(false)} />;
+  const rootNavigationState = useRootNavigationState();
+
+  if (!rootNavigationState?.key) {
+    return null;
   }
 
-  return <LoginScreen />;
+  return isLoggedIn ? (
+    <Redirect href="/dashboard" />
+  ) : (
+    <Redirect href="/(auth)/login" />
+  );
 }

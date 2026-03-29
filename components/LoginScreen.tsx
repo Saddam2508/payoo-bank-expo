@@ -1,4 +1,6 @@
+import { useRouter } from "expo-router";
 import React, { useState } from "react";
+
 import {
   Alert,
   Image,
@@ -10,9 +12,11 @@ import {
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
-export default function Index() {
+export default function LoginScreen() {
+  const router = useRouter();
   const [mobile, setMobile] = useState("01234567891");
   const [pin, setPin] = useState("");
+
   const handleChange = (field: "mobile" | "pin", value: string) => {
     if (field === "mobile") setMobile(value);
     else if (field === "pin") setPin(value);
@@ -21,6 +25,7 @@ export default function Index() {
     if (mobile === "01234567891" && pin === "1234") {
       Alert.alert("login success");
       setPin("");
+      router.replace("/dashboard");
     } else if (mobile !== "01234567891") {
       Alert.alert("please enter valid mobile number");
     } else if (pin !== "1234") {
