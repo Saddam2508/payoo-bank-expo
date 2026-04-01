@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Add Money",
+    "route": "/dashboard/add-money",
+    "icon": "plus-circle"
+  },
+  {
+    "id": 2,
+    "title": "Cash Out",
+    "route": "/dashboard/cashout",
+    "icon": "arrow-down-circle"
+  },
+  {
+    "id": 3,
+    "title": "Transfer Money",
+    "route": "/dashboard/transfer-money",
+    "icon": "send"
+  },
+  {
+    "id": 4,
+    "title": "Get Bonus",
+    "route": "/dashboard/get-bonus",
+    "icon": "gift"
+  },
+  {
+    "id": 5,
+    "title": "Pay Bill",
+    "route": "/dashboard/pay-bill",
+    "icon": "file-text"
+  },
+  {
+    "id": 6,
+    "title": "Transactions",
+    "route": "/dashboard/transactions",
+    "icon": "list"
+  }
+]
