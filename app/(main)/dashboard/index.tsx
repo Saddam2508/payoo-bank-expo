@@ -1,5 +1,6 @@
 import { useRouter } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+
 import menuJson from "../../../public/menu.json";
 
 type MenuItem = {
@@ -31,9 +32,9 @@ export default function Dashboard() {
             onPress={() => router.push(item.route as any)}
             style={styles.dashboardIcon}
           >
-            <Text style={{ fontSize: 30, marginBottom: 10 }}>📊</Text>
+            <Image source={{ uri: item.icon }} style={styles.icon} />
 
-            <Text style={{ color: "white" }}>{item.title}</Text>
+            <Text>{item.title}</Text>
           </Pressable>
         ))}
       </View>
@@ -55,14 +56,21 @@ const styles = StyleSheet.create({
   dashboardIcon: {
     width: "30%",
     backgroundColor: "#faf6f6",
-    padding: 20,
+    padding: 10,
     borderRadius: 20,
     marginBottom: 15,
     alignItems: "center",
     shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
     shadowOpacity: 0.25,
-    shadowRadius: 3.84,
     elevation: 5,
+  },
+  icon: {
+    width: 35,
+    height: 35,
+    marginBottom: 8,
   },
 });
