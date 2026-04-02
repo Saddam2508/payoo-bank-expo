@@ -32,8 +32,15 @@ export default function DashboardLayout() {
           ),
         }}
       />
-      <Stack.Screen name="analytics" options={{ title: "Analytics" }} />
-      <Stack.Screen name="reports" options={{ title: "Reports" }} />
+      <Stack.Screen name="add-money" options={{ title: "Add Money" }} />
+      <Stack.Screen name="cashout" options={{ title: "Cashout" }} />
+      <Stack.Screen
+        name="transfer-money"
+        options={{ title: "Transfer Money" }}
+      />
+      <Stack.Screen name="get-bonus" options={{ title: "Get Bonus" }} />
+      <Stack.Screen name="pay-bill" options={{ title: "Pay Bill" }} />
+      <Stack.Screen name="transactions" options={{ title: "Transactions" }} />
     </Stack>
   );
 }

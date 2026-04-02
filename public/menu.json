@@ -3,36 +3,36 @@
     "id": 1,
     "title": "Add Money",
     "route": "/dashboard/add-money",
-    "icon": "plus-circle"
+    "icon": "https://i.ibb.co/Tqk7fdTG/opt-1.png"
   },
   {
     "id": 2,
     "title": "Cash Out",
     "route": "/dashboard/cashout",
-    "icon": "arrow-down-circle"
+    "icon": "https://i.ibb.co/TMgJ551R/opt-2.png"
   },
   {
     "id": 3,
     "title": "Transfer Money",
     "route": "/dashboard/transfer-money",
-    "icon": "send"
+    "icon": "https://i.ibb.co/gZ7Qftx1/opt-3.png"
   },
   {
     "id": 4,
     "title": "Get Bonus",
     "route": "/dashboard/get-bonus",
-    "icon": "gift"
+    "icon": "https://i.ibb.co/v4kBwTJW/opt-4.png"
   },
   {
     "id": 5,
     "title": "Pay Bill",
     "route": "/dashboard/pay-bill",
-    "icon": "file-text"
+    "icon": "https://i.ibb.co/ccW5Q9mr/opt-5.png"
   },
   {
     "id": 6,
     "title": "Transactions",
     "route": "/dashboard/transactions",
-    "icon": "list"
+    "icon": "https://i.ibb.co/pr9hb6Zk/opt-6.png"
   }
 ]
